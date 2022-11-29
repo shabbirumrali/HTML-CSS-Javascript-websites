@@ -216,3 +216,149 @@ p {
 .post .contentBox .postColumn .postBox.extraHeight {
     height: 800px;
 }
+.post .contentBox .postColumn .postBox .textBox {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: var(--white);
+    padding: 20px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-start;
+    flex-direction: column;
+    transition: 0.25s;
+    opacity: 0;
+    visibility: hidden;
+}
+.post .contentBox .postColumn .postBox:hover .textBox {
+    opacity: 0.9;
+    visibility: visible;
+    cursor: pointer;
+}
+.post .contentBox .postColumn .postBox .textBox h3 {
+    font-size: 1rem;
+    font-weight: 400;
+    letter-spacing: 1px;
+    color: var(--black);
+}
+.post .contentBox .postColumn .postBox .textBox .btn {
+    padding: 4px 10px;
+    font-weight: 400;
+    font-size: 1rem;
+    background: var(--black);
+    color: var(--white);
+}
+.mgt60 {
+    margin-top: 60px;
+}
+.contact {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.contact .contactForm {
+    position: relative;
+    width: 100%;
+    height: 700px;
+    max-width: 700px;
+    margin-top: 20px;
+
+}
+.contact .contactForm .row {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 20px;
+    margin-top: 20px;
+}
+.contact .contactForm .row input,
+.contact .contactForm .row2 textarea  {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid var(--black);
+    color: var(--black);
+    outline: none;
+    font-size: 1rem;
+    font-weight: 500;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+::placeholder {
+    color: var(--black);
+}
+.contact .contactForm .row2 {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+.contact .contactForm .row2 textarea {
+    height: 200px;
+}
+.contact .contactForm .row2  input[type="submit"] {
+    cursor: pointer;
+}
+/* footer */
+footer {
+    padding: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #f8f8f8;
+    border-top: 1px solid rgba(0, 0, 0, 0.5);
+
+}
+footer .footerMenu {
+    list-style-type: none;
+    margin: 20px;
+}
+footer .footerMenu li a{
+    color: var(--black);
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    transition: 0.5s;
+}
+.copyright {
+    color: var(--black);
+    letter-spacing: 1px;
+}
+
+/* Media Query */
+@media (max-width: 991px) {
+    header {
+        padding: 20px 30px;
+    }
+    header.sticky {
+        padding: 20px 30px;
+    }
+    section {
+        padding: 20px;
+    }
+    .banner .contentBox {
+        padding: 40px 30px;
+    }
+    .about .contentBox {
+        grid-template-columns: 1fr;
+    }
+    .post .contentBox {
+        grid-template-columns: 1fr;
+    }
+    .contact .contactForm .row {
+        grid-template-columns: repeat(1, 1fr);
+    }
+    footer {
+        flex-direction: column;
+    }
+    footer .footerMenu {
+        display: flex;
+        gap: 20px;
+    }
+    .copyright {
+     font-size: 0.8rem;   
+    }
+}

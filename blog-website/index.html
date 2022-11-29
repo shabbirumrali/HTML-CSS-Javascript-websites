@@ -13,10 +13,10 @@
         <div class="menu-toggle"></div>
     </header>
     <ul class="navigation">
-        <li><a href="#home">Home</a></li>
-        <li><a href="#about">About</a></li>
-        <li><a href="#post">Post</a></li>
-        <li><a href="#">Contact</a></li>
+        <li><a href="#home" onclick="toggleMenu()">Home</a></li>
+        <li><a href="#about" onclick="toggleMenu()">About</a></li>
+        <li><a href="#post" onclick="toggleMenu()">Post</a></li>
+        <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
     </ul>
 
     <!-- Banner -->
@@ -71,12 +71,12 @@
                    <div class="textBox">
                     <h3>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolores, dolorem sequi? Magni impedit eius sit voluptates iusto velit vitae alias?</h3>
                     <a href="#" class="btn">Read more</a> 
-                   </div> 
+                   </div>
                 </div>
             </div>
 
             <div class="postColumn">
-                <div class="postBox">
+                <div class="postBox extraHeight">
                     <div class="imgBox">
                         <img src="./assets/img-5.jpg" alt="latest post image 1" class="cover">
                     </div>
@@ -98,8 +98,47 @@
                 </div>
             </div>
         </div>
+        <div class="title">
+            <a href="#" class="btn mgt60"> Load more</a>
+        </div>
     </section>
     
+    <!-- Contact page -->
+    <section class="contact" id="contact">
+        <div class="title">
+            <h2>Contact</h2>
+            <p>Lorem ipsum dolor sit amet eum debitis reiciendis rerum repudiandae minus quam, quo tempore amet, voluptatem mollitia asperiores perferendis soluta vero?</p>
+        </div>
+        <div class="contactForm">
+            <div class="row">
+                <input type="text" name="" placeholder="First Name">
+                <input type="text" name="" placeholder="Last Name">
+            </div>
+            <div class="row">
+                <input type="text" name="" placeholder="Email Address">
+                <input type="text" name="" placeholder="Mobile No.">
+            </div>
+            <div class="row2">
+                <textarea name="" id="" cols="30" rows="10" placeholder="Message"></textarea>
+            </div>
+            <div class="row2">
+                <input type="Submit" value="Send" class="btn">
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <a href="#" class="logo">My Blog</a>
+        <ul class="footerMenu">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#post">Post</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+        <p class="copyright">Copyright @2022 Shabbir, All rights received</p>
+    </footer>
+
     <script src="./script/script.js"></script>
 </body>
 </html>
